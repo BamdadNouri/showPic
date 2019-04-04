@@ -7,14 +7,14 @@ const fs = require('fs')
 
 
 program
-    .command('showpic <file>')
-    .alias('sp')
+    .command('sp <file>')
     .description('To show pictures in terminal with .png/.jpg/.jpeg format.')
     .action((fileName) => {
+
         fs.createReadStream(fileName)
         .on('error', () => {charm.foreground('red').write(`There's no file with `).foreground(135).write(`${fileName}`).foreground('red').write(` name/path! \n`).display('reset') })
         .pipe(new PNG())
-        .on('parsed', function(data) {
+        .on('parsed', function() {
     
         var dx = this.width / 100,
             dy = 2 * dx
@@ -35,6 +35,6 @@ program
     })
 
 
-
+//•
 
     program.parse(process.argv)
