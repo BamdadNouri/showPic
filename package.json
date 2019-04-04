@@ -1,0 +1,11 @@
+{
+  "name": "showpic",
+  "version": "1.0.0",
+  "description": "To show pictures in terminal with .png/.jpg/.jpeg format.",
+  "main": "showPic.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BamdadNouri",
+  "license": "ISC"
+}

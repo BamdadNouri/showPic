@@ -1,0 +1,6 @@
+            if (this.data[i+3] > 0) {
+                charm.background(ix).write(' ')
+            }
+            else {
+                charm.display('reset').write(' ')
+            }
