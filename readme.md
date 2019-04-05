@@ -17,3 +17,10 @@ Using without installation :
 ```
 node showPic.js showpic somePic.png
 ```
+
+## Example
+It turns this:
+![](https://raw.githubusercontent.com/BamdadNouri/showPic/master/img/orginal.png)
+
+to this:
+![](https://raw.githubusercontent.com/BamdadNouri/showPic/master/img/transformed.png)
